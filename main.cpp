@@ -147,7 +147,10 @@ void show_efiboot_vars() {
     print_efi_bootnext();
     print_efi_bootcurrent();
     print_efi_bootorder();
-    for (int i=0;i<10;i++) {
+    for (int i=0x0001;i<0x0010;i++) {
+        print_efi_loadoption(i);
+    }
+    for (int i=0x2001;i<0x2010;i++) {
         print_efi_loadoption(i);
     }
 }
