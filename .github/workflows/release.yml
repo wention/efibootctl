@@ -28,5 +28,5 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: efibootctl
-        path: build/efibootctl.exe
+        path: build\Release\efibootctl.exe
       
